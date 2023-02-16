@@ -65,7 +65,7 @@
                 android:src="@drawable/crash"
                 />
 
-            
+
             <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/box"
                 android:layout_width="@dimen/_50sdp"

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <data>
+
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context=".activity.StartActivity"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textSize="@dimen/_25ssp"
+            />
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_60sdp"
+            >
+
+
+            <TableRow android:gravity="center">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/boost"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_30_point"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:textSize="@dimen/_14ssp"
+                    />
+            </TableRow>
+
+            <TableRow
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_20sdp"
+                >
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/power"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_10_point"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:textSize="@dimen/_14ssp"
+                    />
+            </TableRow>
+
+
+            <TableRow
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_20sdp"
+                >
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/crash"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_over"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:textSize="@dimen/_14ssp"
+                    />
+            </TableRow>
+        </TableLayout>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnStartGame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_60sdp"
+            android:text="@string/start"
+            />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>
